@@ -1,7 +1,7 @@
-id=template
-name=Template Module
+id=customnotificationsnoozing
+name=Custom Notification Snoozing
 version=v1
 versionCode=1
-author=topjohnwu
-description=A short description
+author=HeyItsJono (CarteNoir)
+description=Runs a short script to change notification snooze times at boot. By default, it sets them to 3/7/15/24hrs. Modify the integers in "/data/CNSvalues.txt" to customise. "def" refers to the default snooze setting, and must be the same as one of the other four values. Variables a, b, c, and d refer to the four value options, given as integers representing seconds. Reboot to apply changes (or run this module's service.sh from a terminal emulator). See Github for more details.
 minMagisk=1500

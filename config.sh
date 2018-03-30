@@ -31,7 +31,7 @@ PROPFILE=false
 POSTFSDATA=false
 
 # Set to true if you need late_start service script
-LATESTARTSERVICE=false
+LATESTARTSERVICE=true
 
 ##########################################################################################
 # Installation Message
@@ -41,7 +41,7 @@ LATESTARTSERVICE=false
 
 print_modname() {
   ui_print "*******************************"
-  ui_print "     Magisk Module Template    "
+  ui_print " Custom Notification Snoozing  "
   ui_print "*******************************"
 }
 
@@ -85,6 +85,7 @@ set_permissions() {
 
   # The following is default permissions, DO NOT remove
   set_perm_recursive  $MODPATH  0  0  0755  0644
+  set_perm $MODPATH/service.sh  0  0  0755 
 }
 
 ##########################################################################################
@@ -96,4 +97,3 @@ set_permissions() {
 # update-binary. Refrain from adding code directly into update-binary, as it will make it
 # difficult for you to migrate your modules to newer template versions.
 # Make update-binary as clean as possible, try to only do function calls in it.
-
