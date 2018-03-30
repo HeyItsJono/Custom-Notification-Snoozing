@@ -3,7 +3,7 @@
 Runs a short script to change Oreo notification snooze times at boot. By default, it sets them to 3/7/15/24hrs, but this can be changed to your preference.
 
 ## Changing the snooze time
-Modify the integers in "/data/CNSvalues.txt" to customise.
+Modify the integers in `/data/CNSvalues.txt` to customise.
 
 After installing this module, it will create two files under `/data`. These files are `CNS.log` (a logfile for this module), and `CNSvalues.txt`. The latter is how you modify snooze times. It has the following structure:
 
